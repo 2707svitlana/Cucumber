@@ -9,15 +9,14 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/main/java/features",//path to feature files
         glue = "steps",//package path
         tags = "@TestSertificateVarification",//list feature files for run
-        dryRun = false
-       // monochrome = true,
-      //  publish = true
+        dryRun = false,
+        monochrome = true,
+        publish = true
 )
 public class FirstRunner {
     @BeforeClass
